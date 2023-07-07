@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Folder</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-blocks">
+        <div class="left-bar" id="discImmedate"></div>
+        <div class="right-bar">
+          <div class="path">
+            <button class="path-button">
+              <img src="imgs/hardDisk.png" alt="disk" width="20px" height="20px"/>
+              <p>Диск F</p>
+            </button>
+          </div>
+          <div class="files-slots" id="currentFolder"></div>
+        </div>
+      </div>
+    </div>
+    <nav id="context-menu" class="context-menu">
+      <ul class="context-menu__items">
+        <li class="context-menu__item">
+          <a href="#" class="context-menu__link" data-action="Открыть">
+          <i class="fa fa-eye"></i>Открыть</a>
+        </li>
+        <li class="context-menu__item">
+          <a href="#" class="context-menu__link" data-action="Удалить">
+          <i class="fa fa-times"></i>Удалить</a>
+        </li>
+        <li class="context-menu__item">
+          <a href="#" class="context-menu__link" data-action="Переиминовать">
+          <i class="fa fa-times"></i>Переиминовать</a>
+        </li>
+        <li class="context-menu__item">
+          <a href="#" class="context-menu__link" data-action="Скачать">
+          <i class="fa fa-edit"></i>Скачать</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="main.js"></script>
+  </body>
+</html>
