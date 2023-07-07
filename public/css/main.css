@@ -1,0 +1,128 @@
+body{
+    background: #000000;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin: 0;
+    width: 1280px;
+    height: 720px;
+    justify-content: left;
+}
+.path{
+    height: 20px;
+    width: 100%;
+    background-color: #181817;
+    margin-bottom: 10px;
+}
+.main-blocks{
+    display:flex;
+    height: 720px;
+    width: 1280px;
+}
+.left-bar{
+    border-color: #337aff;
+    width: 15%;
+    background-color: #181817;
+}
+.left-bar>.slot{
+    margin: 0;
+}
+.disks-button{
+    display: flex;
+    padding-right: 50%;
+    padding-bottom: 0;
+    background-color:#181817;
+    color: white;
+    border: none;
+    font-size: 1em;
+
+}
+.right-bar{
+    width: 85%;
+    overflow-y: scroll;
+    background-color: #201f1f;
+}
+.folder-button,.file-button{
+    display: flex;
+    /*padding-right: 50%;*/
+    padding-bottom: 0;
+    background-color:#201f1f;
+    color: white;
+    border: none;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.folder-button>img,.file-button>img{
+    margin-right: 3px;
+}
+.file-slot{
+    display: flex;
+    height:5%;
+    color: white;
+}
+.path-button{
+    display: flex;
+    padding-right: 5%;
+    padding-bottom: 0;
+    background-color:#181817;
+    color: white;
+    border: none;
+}
+.slots{
+    height: 100%;
+}
+.slot{
+    height:5%;
+    color: white;
+}
+.chosen{
+    background-color: #2828ff !important;
+}
+.chosen-to-copy{
+    color: #8d8c8c !important;
+}
+.context-menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    padding: 12px 0;
+    width: 240px;
+    background-color: #181817;
+    border: solid 1px white;
+}
+.context-menu--active {
+    display: block;
+}
+.context-menu__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.context-menu__item {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.context-menu__item:last-child {
+    margin-bottom: 0;
+}
+
+.context-menu__link {
+    display: block;
+    padding: 4px 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.context-menu__link:hover {
+    color: #fff;
+    background-color: #2d2d2d;
+}
